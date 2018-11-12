@@ -1,5 +1,7 @@
 ﻿FROM dget/dock-gn:1804-gpu
 
+SHELL ["/bin/bash", "-c"]
+
 RUN pip install --no-cache-dir jupyter
 
 RUN mkdir /.local && chmod a+rwx /.local
