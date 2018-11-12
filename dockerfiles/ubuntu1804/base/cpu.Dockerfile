@@ -1,5 +1,7 @@
 ﻿FROM dget/dock-tf:1804
 
+ENV CONTAINER_NAME dock-gn
+
 RUN pip install --no-cache-dir \
         graph_nets \
         matplotlib \
@@ -8,4 +10,4 @@ RUN pip install --no-cache-dir \
 
 ENTRYPOINT ["/entry.sh"]
 
-CMD bash -l
+CMD ["bash", "-l"]
