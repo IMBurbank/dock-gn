@@ -2,6 +2,8 @@
 
 RUN pip install --no-cache-dir \
         graph_nets \
+        matplotlib \
+        scipy \
         tensorflow_probability
 
 ENTRYPOINT ["/entry.sh"]
